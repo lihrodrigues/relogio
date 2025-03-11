@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Código com Envio por E-mail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="verification-container">
+        <h2>Verificação de Código</h2>
+        
+        <!-- Exibição do código de confirmação -->
+        <div class="code-container">
+            <p>Seu código de confirmação será enviado por e-mail:</p>
+            <span id="verificationCode">Aguardando...</span>
+        </div>
+
+        <!-- Contagem regressiva -->
+        <div class="countdown-container">
+            <p id="countdown">Tempo restante: 2:00</p> <!-- Contagem regressiva exibida aqui -->
+        </div>
+
+        <!-- Formulário para enviar e-mail -->
+        <div class="email-container">
+            <input type="email" id="email" placeholder="Digite seu e-mail" required>
+            <button id="generateCodeButton">Gerar Código e Enviar</button>
+        </div>
+
+        <!-- Mensagem de confirmação -->
+        <div id="confirmation-message"></div>
+
+        <!-- GIF Relógio -->
+        <div class="gif-container">
+            <img src="rg.gif" alt="Relógio GIF" id="clockGif">
+        </div>
+
+        <!-- Relógio -->
+        <div class="clock">
+            <span id="hora"></span>:<span id="minuto"></span>:<span id="segundo"></span>
+        </div>
+
+        <!-- Verificação de código -->
+        <div class="code-verification-container">
+            <input type="text" id="codeInput" placeholder="Digite o código recebido" required>
+            <button id="verifyCodeButton">Verificar Código</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
